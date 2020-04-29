@@ -1,0 +1,3 @@
+# natom : number of atoms
+# xxx	: input file (xxx)
+grep -h -A natom # xxx | sed "s/#/natom\n#/g" | sed "s/--//g" | sed '/^$/d' > xxx.xyz
